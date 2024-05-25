@@ -12,10 +12,13 @@ import (
 	//"unicode"
 )
 func CamelCase(s string) string {
+	// make the string into each words
     words := strings.Fields(s)
     for i := range words{
+		//make the words title words
       words[i]=strings.Title(words[i])
     }
+	//then join each words using join
   camel:= strings.Join(words,"")
   return camel
 }
